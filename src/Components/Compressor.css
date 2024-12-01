@@ -1,0 +1,214 @@
+
+.center {
+    text-align: center ;
+}
+
+/* Main container styles */
+.mainContainer {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .mainContainer {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+/* Navbar styling */
+.navbar {
+    z-index: 1041;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa !important;
+    padding: 15px 30px;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Navbar content styles */
+.navbar-content {
+    color: #2c3e50 !important;
+    font-weight: bold;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    letter-spacing: 1px;
+}
+
+/* Navbar action icons */
+.help-icon,
+.history-icon {
+    font-size: 22px;
+    cursor: pointer;
+    margin-right: 15px;
+    color: #2c3e50;
+    transition: color 0.3s, transform 0.1s;
+}
+
+.help-icon:hover,
+.history-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Help and history container styling */
+.help-container,
+.history-container {
+    text-align: left;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Image styling */
+.uploadCard {
+    width: 90%;
+    display: inline-block;
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ecf0f1;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+
+
+/* File upload button */
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 10px;
+
+}
+
+.btn {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right:10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Specific button styling */
+.btn-primary {
+    background-color: #3498db;
+}
+
+.btn-primary:hover {
+    background-color: #27628a;
+    transform: scale(1.1);
+}
+
+.upload-btn-wrapper input[type="file"] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+
+    
+}
+
+#qualitySlider {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0;
+}
+.upload-btn-wrapper:hover{
+    transition: background-color 0.3s, transform 0.2s;
+    transform:scale(1.1) ; 
+}
+
+/* Download button styling */
+.btn.download-btn {
+    background-color: #2ecc71;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn.download-btn:hover {
+    background-color: #27ae60;
+    transform: scale(1.05);
+}
+
+/* Reset button styling */
+.btn-reset {
+    border: none;
+    color: white;
+    background-color: #e74c3c;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.btn-reset:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Message styling */
+.compressed-message {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2ecc71;
+    margin-top: 10px;
+}
+
+.compressed-message:hover {
+    color: #27ae60;
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Responsive design improvements */
+@media (max-width: 768px) {
+    .help-container,
+    .history-container {
+        width: 100%;
+        max-width: none;
+    }
+
+    .navbar-content {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+}
